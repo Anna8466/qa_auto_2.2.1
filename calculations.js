@@ -1,9 +1,10 @@
 function increaseBalance(x, y) {
- return x + y;
+ x += y
+ return x;
 }
 
 function decreaseBalance(x, y) {
-return x - y;
+return x -= y;
 }
 
 function divideBalanceByAccounts(balance, accNumber) {
@@ -11,7 +12,7 @@ function divideBalanceByAccounts(balance, accNumber) {
  }
 
 function getRestAfterDivision(x, y) {
-  return x % y;
+  return x %= y;
   }
 
 console.log(increaseBalance(3000, 700));
